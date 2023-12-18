@@ -1,0 +1,56 @@
+[class*="Voice_voiceStates__"] {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class*="Voice_voiceState__"] {
+    height: auto;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+[class*="Voice_avatar__"] {
+    border-radius: 8px;
+    filter: brightness(70%);
+    width: 80px;
+    height: 80px;
+    margin-bottom: 8px;
+}
+
+[class*="Voice_avatarSpeaking__"] {
+    position: relative;
+    animation: 300ms infinite alternate ease-in-out speak-jump;
+    filter: brightness(100%);
+    border-color: transparent;
+    animation-duration: 300ms;
+}
+
+[class*="Voice_name__"] {
+    max-width: 80px;
+    box-sizing: border-box;
+    text-overflow: clip;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+}
+
+@keyframes speak-jump {
+    0% {
+        bottom: 0px;
+    }
+
+    50% {
+        bottom: 10px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+[class*="Voice_voiceContainer__"] {
+    justify-content: flex-end;
+    display: flex;
+}
