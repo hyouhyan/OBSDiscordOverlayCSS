@@ -1,3 +1,3 @@
 # OBSDiscordOverlayCSS
 
-`@import url("https://gh.hyouhyan.com/OBSDiscordOverlayCSS/style.css");`
+`@import url("https://hyouhyan.github.io/OBSDiscordOverlayCSS/style.css");`
